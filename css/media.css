@@ -1,0 +1,104 @@
+/* Define styles for screens with a maximum width of 500px */
+@media screen and (max-width: 999px) {
+
+    /* Adjust the width and margin of the logo image */
+    .logo img {
+        width: 130px;
+        margin-top: 20px;
+    }
+
+    /* Styles for the user menu */
+    .user-menu {
+        width: 300px;
+        height: 60px;
+        position: absolute;
+        right: 0;
+    }
+
+    /* Styles for each item in the user menu */
+    .user-menu ul li {
+        width: 90px;
+        font-size: 12px;
+    }
+
+    /* Adjust the width and margins of the search area */
+    .search-area {
+        width: 361px !important;
+        margin-left: -12px;
+        margin-top: 10px;
+        height: 41px;
+    }
+
+    /* Adjust the width of the search box */
+    .search_box {
+        width: 259px !important;
+    }
+
+    /* Adjust the margin of the search button */
+    .search_btn {
+        width: 100px;
+        margin-left: 0px;
+    }
+
+    /* Styles for the slider area */
+    .slider-area {
+        float: left;
+        height: 250px;
+        margin-top: 18px;
+    }
+
+    /* Adjust the height of slider images */
+    .slider-area .slider img {
+        height: 250px;
+    }
+
+    /* Styles for the slider content */
+    .slider-content {
+        width: 300px;
+        top: 130px;
+        left: 50px;
+    }
+
+    /* Adjust the font size of slider content headings */
+    .slider-content h3 {
+        font-size: 15px;
+    }
+
+    /* Styles for the product section */
+    .product-section {
+        float: left;
+    }
+
+    /* Adjust the margin of product cards */
+    .product-card {
+        margin: 10px 30px;
+    }
+
+    .product-custom-row {
+        padding: 30px 0 !important;
+    }
+
+    /* Styling for the selling price in product detail */
+    .product-detail-price .Selling-price {
+        font-size: 25px;
+    }
+
+    /* Styling for the regular price in product detail */
+    .product-detail-price .Regular-price {
+        font-size: 20px;
+    }
+    /* Styling for the cart section margin-top detail */
+    .card {
+        margin-top: 48px;
+    }
+    /* Styling for the product-add-cart-btn detail */
+    .product-add-cart-btn {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    /* Styling for the short description in product detail */
+    .product-detail-short-description p,.product-detail-long-description {
+        font-size: 14px;
+    }
+}

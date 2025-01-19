@@ -1,0 +1,364 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting background color for the whole page */
+body {
+    background: silver;
+}
+
+/* Styling for navigation bar */
+.navigation-bar {
+    width: 100%;
+    height: 70px;
+    background: #4c4c4c;
+}
+
+/* Styling for the logo */
+.logo {
+    width: 180px;
+    float: left;
+}
+
+/* Styling for the logo image */
+.logo img {
+    width: 200px;
+    margin-top: 8px;
+}
+
+/* Styling for the search area */
+.search-area {
+    width: 600px;
+    height: 38px;
+    margin-left: 50px;
+    float: left;
+    border-radius: 20px;
+    outline: none;
+}
+
+/* Styling for the search box */
+.search_box {
+    width: 480px;
+    padding: 10px;
+    margin-top: 11.6px;
+    float: left;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid transparent;
+    /* Add transparent border */
+    transition: border-color 0;
+    /* Smooth transition for border color */
+}
+
+.search_box:focus {
+    border-color: #000;
+    /* Change border color to dull or dark on focus */
+    outline: none;
+    /* Remove default outline */
+}
+
+/* Define a class for styling the placeholder text */
+.search_box::placeholder {
+    color: #4c4c4c;
+    /* Change the color to blue */
+}
+
+/* Styling for the search button */
+.search_btn {
+    float: left;
+    width: 120px;
+    height: 47px;
+    margin-top: 11px;
+    padding: 10.3px;
+    border-radius: 0 5px 5px 0;
+    background-color: #14bc15;
+    /* New color */
+    color: white;
+    /* Text color */
+}
+
+/* Styling for the search button on hover */
+.search_btn:hover {
+    background-color: #14ba15;
+    /* New color on hover */
+    color: white;
+    /* Text color on hover */
+}
+
+/* Styling for the user menu */
+.user-menu {
+    width: 300px;
+    height: 60px;
+    float: right;
+}
+
+/* Styling for the user menu list */
+.user-menu ul {
+    float: right;
+}
+
+/* Styling for the user menu list items */
+.user-menu ul li {
+    list-style: none;
+    float: left;
+    width: 125px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+/* Styling for the user menu list items on hover */
+.user-menu li:hover {
+    background: #14ba15;
+}
+
+/* Styling for the links in the user menu */
+.user-menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* Styling for the dropdown menu */
+.user-menu .dropdown-menu {
+    border: none;
+}
+
+/* Styling for the links in the dropdown menu */
+.user-menu .dropdown-menu a {
+    color: #ffffff;
+    padding: 5px 10px;
+    height: auto;
+    line-height: 20px;
+    text-align: left;
+}
+
+/* Styling for the links in the dropdown menu on hover */
+.user-menu .dropdown-menu a:hover {
+    background-color: #14bc15;
+    padding: 5px 10px;
+}
+
+/* Styling for the slider area */
+.slider-area {
+    width: 100%;
+    height: 500px;
+}
+
+/* Styling for the images in the slider */
+.slider-area .slider img {
+    width: 100%;
+    height: 500px;
+}
+
+/* Styling for the slider controls */
+.bx-wrapper {
+    border: none !important;
+}
+
+/* Styling for the slider navigation buttons */
+.bx-wrapper .bx-controls-auto,
+.bx-wrapper .bx-pager {
+    bottom: 30px !important;
+}
+
+/* Styling for the slider content */
+.slider-content {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    width: 600px;
+}
+
+/* Styling for the product section */
+.product-section {
+    width: 100%;
+    background: #fff;
+    padding: 40px 10px;
+    margin: 15px 0;
+}
+
+/* Styling for the section heading */
+.section-heading {
+    width: 100%;
+    height: 40px;
+}
+
+/* Styling for the section heading text */
+.section-heading .heading {
+    font-weight: 400;
+    border-bottom: 2px solid;
+    padding-bottom: 7px;
+    display: inline-block;
+}
+
+/* Styling for the product cards section */
+.section-product-cards {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Styling for individual product cards */
+.product-card {
+    width: 250px;
+    height: 380px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin: 10px 20px;
+}
+
+/* Styling for the product images within cards */
+.product-card .product-image {
+    height: 300px;
+    padding: 25px 5px;
+    background-color: #f1f1f1;
+}
+
+/* Styling for the images within product cards */
+.product-card .product-image img {
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+/* Styling for the card contents */
+.card-contents {
+    position: absolute;
+    background: rgba(175, 203, 231, 0.3);
+    top: -400px;
+    /* Change from -400px to 0 */
+    left: 0;
+    width: 100%;
+    height: 300px;
+    visibility: hidden;
+    transition: .2s all ease-in-out;
+}
+
+/* Styling for card contents on hover */
+.product-card:hover .card-contents {
+    visibility: visible;
+    top: 0;
+}
+
+/* Styling for the cart button */
+.cart-btn {
+    margin: 130px 100px;
+}
+
+/* Styling for product details */
+.product-details {
+    padding: 10px;
+}
+
+/* Styling for product name */
+.product-name {
+    font-weight: 400;
+    color: #575252;
+}
+
+/* Styling for product price */
+.product-price {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Styling for the span within product price */
+.product-price span {
+    margin-left: 20px;
+}
+
+/* Styling for Owl Carousel navigation buttons */
+.section-product-cards .owl-carousel .owl-nav button.owl-next,
+.section-product-cards .owl-carousel .owl-nav button.owl-prev {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: greenyellow;
+    color: #fff;
+    line-height: 50px;
+    /* Adjusted line-height */
+    position: absolute;
+    outline: none;
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Center vertically */
+}
+
+/* Styling for the next button in Owl Carousel */
+.section-product-cards .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+
+/* Styling for the previous button in Owl Carousel */
+.section-product-cards .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+}
+
+/* Styling for the product detail title */
+.product-detail-title h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Styling for the short description in product detail */
+.product-detail-short-description p {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Styling for the product detail price */
+.product-detail-price {
+    margin-top: 35px;
+}
+
+/* Styling for the selling price in product detail */
+.product-detail-price .Selling-price {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Styling for the regular price in product detail */
+.product-detail-price .Regular-price {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.product-custom-row {
+    padding: 100px 0 !important;
+}
+
+.large-image {
+    width: 70%;
+    /* Ensures the image takes up the full width of its container */
+    height: auto;
+    /* Allows the height to adjust proportionally */
+}
+.btn-primary:active,
+.btn-warning:active {
+        filter: brightness(0.7); /* Reduce brightness when clicked */
+}
+.login-card{
+    width: 400px;
+    margin: 0 auto !important;
+}
+.nav-link:hover{
+    color:blue;
+}
+
+.order-product-card{
+    padding: 15px 8px;
+    /* margin: 15px 0 !important; */
+    border-bottom: .6px solid #f2f2f2;
+}
+
+.order-product-image{
+    width: 220px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+.order-product-image IMG{
+    height: 170px;
+}
